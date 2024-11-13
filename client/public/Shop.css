@@ -1,0 +1,22 @@
+.containerShop{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    gap: 30px;
+    padding: 20px;
+    padding-top: 20px;
+    padding-left: 60px;
+}
+@media (max-width: 900px) {
+    .item {
+        flex: 1 1 calc(50% - 20px); /* 2 cards per row on medium screens */
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 600px) {
+    .item {
+        flex: 1 1 100%; /* 1 card per row on small screens */
+        max-width: 100%;
+    }
+}
